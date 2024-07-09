@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Encriptacion de texto</title>
+</head>
+
+<body>
+    <header></header>
+    <main class="area_encriptar">
+        <div class="area_encriptar_contenido">
+            <div class="area_encriptar_logo">
+                <img src="images/Logo.png" alt="logo" class="logo1">
+            </div>
+            <div class="area_encriptar_texto_botones">
+                <input type="text" name="texto" placeholder="Ingrese el texto aqui" class="texto_encriptado">
+                <div class="orientacion_botones">
+                    <div class="orientacion">
+                        <div class="logo">
+                            <img src="images/exclamation-circle-.png" alt="">
+                        </div>
+                        <div>
+                            <h2 class="orientacion_texto">Solo letras minúsculas y sin acentos</h2>
+                        </div>
+                    </div>
+                    <div class="botones">
+                        <a href="#" class="area_encriptar_boton1">Encriptar</a>
+                        <a href="#" class="area_encriptar_boton2">Desencriptar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="area_desincriptar" id="area_desincriptar">
+            <h1 class="area_desincriptar_mensaje" id="area_desincriptar_mensaje"></h1>
+            <img src="images/Muñeco.png" alt="muneco" id="muneco" class="muneco">
+            <div class="area_desincriptar_textos" id="area_desincriptar_textos">
+                <div>
+                    <p class="area_desincriptar_texto1">Ningún mensaje fue encontrado</p>
+                </div>
+                <div>
+                    <p class="area_desincriptar_texto2">Ingresa el texto que desees encriptar o desencriptar.
+                    </p>
+                </div>
+            </div>
+            <a href="#" onclick="copiartexto()" class="area_desencriptar_boton3">Copiar</a>
+        </div>
+
+    </main>
+    <footer></footer>
+    <script src="app.js"></script>
+</body>
+</html>
